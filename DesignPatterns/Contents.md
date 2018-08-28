@@ -1,0 +1,10 @@
+- Observer
+- Composer
+- Builder
+- Façade
+- Adapter
+- Decorator
+- Command
+- Mediator
+- Memento
+- Chain of responsibility
