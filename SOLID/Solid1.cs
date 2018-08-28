@@ -22,8 +22,7 @@ public abstract class MembershipProvider : ProviderBase
         object providerUserKey,
         out MembershipCreateStatus status);
 
-    public abstract bool ChangePasswordQuestionAndAnswer(string username, 
-string password, string newPasswordQuestion, string newPasswordAnswer);
+    public abstract bool ChangePasswordQuestionAndAnswer(string username, string password, string newPasswordQuestion, string newPasswordAnswer);
     public abstract string GetPassword(string username, string answer);
     public abstract bool ChangePassword(string username, string oldPassword, string newPassword);
     public abstract string ResetPassword(string username, string answer);
@@ -34,11 +33,8 @@ string password, string newPasswordQuestion, string newPasswordAnswer);
     public abstract MembershipUser GetUser(string username, bool userIsOnline);
     public abstract string GetUserNameByEmail(string email);
     public abstract bool DeleteUser(string username, bool deleteAllRelatedData);
-    public abstract MembershipUserCollection GetAllUsers(int pageIndex,
- int pageSize, out int totalRecords);
+    public abstract MembershipUserCollection GetAllUsers(int pageIndex, int pageSize, out int totalRecords);
     public abstract int GetNumberOfUsersOnline();
-    public abstract MembershipUserCollection FindUsersByName(string usernameToMatch, 
-int pageIndex, int pageSize, out int totalRecords);
-    public abstract MembershipUserCollection FindUsersByEmail(string emailToMatch, 
-int pageIndex, int pageSize, out int totalRecords);
+    public abstract MembershipUserCollection FindUsersByName(string usernameToMatch, int pageIndex, int pageSize, out int totalRecords);
+    public abstract MembershipUserCollection FindUsersByEmail(string emailToMatch, int pageIndex, int pageSize, out int totalRecords);
 }
